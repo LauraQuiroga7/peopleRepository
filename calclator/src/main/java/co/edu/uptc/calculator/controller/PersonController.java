@@ -18,7 +18,7 @@ import co.edu.uptc.calculator.service.PersonService;
 @RequestMapping("/personas")
 public class PersonController {
 
-    private static final String MENSAJE = "Lauraaaa";
+    private static final String MENSAJE = "Vanessaaaa";
     private final PersonService personService;
 
     public PersonController(PersonService personService) {
@@ -45,7 +45,5 @@ public class PersonController {
         return personService.updatePerson(id, datos);
     }
 
-    private String getMensaje() {
-        return "Lauraaaaa";
-    }
+   
 }

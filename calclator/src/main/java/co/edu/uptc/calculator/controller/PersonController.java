@@ -46,6 +46,6 @@ public class PersonController {
     }
 
     private String getMensaje() {
-        return "Lauuuuuu";
+        return "Lauraaaaa";
     }
 }

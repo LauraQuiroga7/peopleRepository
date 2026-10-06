@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.edu.uptc.calculator.dto.PersonDTO;
+import co.edu.uptc.calculator.dto.PersonDetalleDTO;
 import co.edu.uptc.calculator.model.Person;
 import co.edu.uptc.calculator.service.PersonService;
 
@@ -17,27 +18,34 @@ import co.edu.uptc.calculator.service.PersonService;
 @RequestMapping("/personas")
 public class PersonController {
 
+    private static final String MENSAJE = "Hola profesor";
     private final PersonService personService;
 
     public PersonController(PersonService personService) {
         this.personService = personService;
     }
 
-    // Consultar personas por página
     @GetMapping("/pagina/{pagina}")
     public PersonDTO getPersons(@PathVariable int pagina) {
         List<Person> persons = personService.getPersons(pagina);
         String container = System.getenv("CONTAINER_NAME");
-        return new PersonDTO(container, persons);
+        return new PersonDTO(container, MENSAJE, persons);
     }
-    @GetMapping("/{id}")
-    public Person getPerson(@PathVariable Long id) {
-    return personService.getPerson(id);
-}
 
-    // Modificar una persona
+    @GetMapping("/{id}")
+    public PersonDetalleDTO getPerson(@PathVariable Long id) {
+        Person p = personService.getPerson(id);
+        return new PersonDetalleDTO(
+                p.getId(), p.getNombre(), p.getApellido(),
+                System.getenv("CONTAINER_NAME"), MENSAJE);
+    }
+
     @PutMapping("/{id}")
     public Person updatePerson(@PathVariable Long id, @RequestBody Person datos) {
         return personService.updatePerson(id, datos);
+    }
+
+    private String getMensaje() {
+        return "Hola profesor";
     }
 }

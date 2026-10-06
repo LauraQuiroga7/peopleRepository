@@ -1,0 +1,31 @@
+2026-10-05T21:35:41.579-05:00  INFO 5632 --- [calclator] [main] c.e.u.c.CalclatorApplicationTests        : Starting CalclatorApplicationTests using Java 21.0.10 with PID 5632 (started by ACER in c:\Users\ACER\Documents\SistemasDistribuidos\CakculadoraWeb\calclator)
+2026-10-05T21:35:41.597-05:00  INFO 5632 --- [calclator] [main] c.e.u.c.CalclatorApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T21:35:43.771-05:00  INFO 5632 --- [calclator] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T21:35:43.979-05:00  INFO 5632 --- [calclator] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 1 JPA repository interface.
+2026-10-05T21:35:45.365-05:00  INFO 5632 --- [calclator] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-05T21:35:45.635-05:00  INFO 5632 --- [calclator] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-10-05T21:35:47.345-05:00  INFO 5632 --- [calclator] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T21:35:47.504-05:00  INFO 5632 --- [calclator] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T21:35:48.828-05:00  INFO 5632 --- [calclator] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@215c6ec0
+2026-10-05T21:35:48.838-05:00  INFO 5632 --- [calclator] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T21:35:49.168-05:00  INFO 5632 --- [calclator] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://192.168.1.90:3306/personas_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: personas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-05T21:35:51.710-05:00  INFO 5632 --- [calclator] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T21:35:51.733-05:00  INFO 5632 --- [calclator] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T21:35:52.017-05:00  INFO 5632 --- [calclator] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-05T21:35:52.918-05:00  WARN 5632 --- [calclator] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T21:35:53.885-05:00  WARN 5632 --- [calclator] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-10-05T21:35:54.428-05:00  INFO 5632 --- [calclator] [main] c.e.u.c.CalclatorApplicationTests        : Started CalclatorApplicationTests in 13.924 seconds (process running for 17.202)
+2026-10-05T21:35:56.070-05:00  INFO 5632 --- [calclator] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T21:35:56.078-05:00  INFO 5632 --- [calclator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-05T21:35:56.114-05:00  INFO 5632 --- [calclator] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

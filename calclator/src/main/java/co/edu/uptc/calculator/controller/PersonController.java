@@ -18,7 +18,7 @@ import co.edu.uptc.calculator.service.PersonService;
 @RequestMapping("/personas")
 public class PersonController {
 
-    private static final String MENSAJE = "Vanessaaaa";
+    private static final String MENSAJE = "8 de octubre";
     private final PersonService personService;
 
     public PersonController(PersonService personService) {
